@@ -11,10 +11,8 @@ function checkResponse (inputNumber, inputName){
   let inputNumberArray = inputNumber.toString().split("").map(n => parseInt(n));
   let highNumber = 0;
   inputNumberArray.forEach(function (number) {
-    if (number >= 1 && number <= 3) {
-      if (highNumber < number) {
-        highNumber = number;
-      }
+    if (number >= 1 && number <= 3 && highNumber < number) {
+      highNumber = number;
     }
   });
   if (highNumber > 0) {
