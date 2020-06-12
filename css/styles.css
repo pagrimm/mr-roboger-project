@@ -9,14 +9,21 @@ body {
   margin-top: 20px;
 }
 
+input {
+  outline: none;
+  background-color: black;
+  color: #66FF66;
+  border: 0px;
+}
+
 #robot {
+  float:left;
   font-size:5rem;
   min-height:100px;
-  text-align: right;
 }
 
 .speech-bubble {
-	position: relative;
+  position: relative;
   background: #202020	;
   border-radius: .4em;
   padding:10px;
@@ -34,11 +41,6 @@ body {
 	border-left: 0;
 	margin-top: -1em;
 	margin-left: -1em;
-}
-
-.text-center::before{
-  content:"";
-  margin-left:calc(100% - 75%);
 }
 
 @media only screen and (max-width: 768px) {
