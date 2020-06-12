@@ -34,12 +34,16 @@ button:hover {
 }
 
 #output-section {
+  display: none;
   margin-top: 20px;
+  margin-right: 20px;
   border: 1px solid #66FF66;
+  padding: 10px;
 }
 
 #robot {
   font-size: 5rem;
+  text-align: right;
 }
 
 #output {

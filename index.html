@@ -13,16 +13,20 @@
 <body>
   <section id="input-section">
     <p>WELCOME TO MR. ROBOGER'S NEIGHBORHOOD</p>
-    <p>PLEASE INPUT YOUR NAME:</p>
-    <p><span>> </span><input id="input" type="text" autocomplete="off"></p>
+    <form id="form1">
+      <p>PLEASE INPUT YOUR NAME:</p>
+      <p><span>> </span><input id="input-name" type="text" autocomplete="off"></p>
+      <p>PLEASE INPUT AN INTEGER:</p>
+      <p><span>> </span><input id="input-number" type="text" autocomplete="off"></p>
+    </form>
   </section>
   <section id="button-section">
-    <button type="submit">SUBMIT</button>
+    <button type="submit" form="form1">SUBMIT</button>
     <button type="button">CLEAR</button>
   </section>
   <section id="output-section">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-2 my-auto">
         <div id="robot">&#129302;</div>
       </div>
       <div class="col-md-10 my-auto">
