@@ -1,0 +1,34 @@
+h1 {
+  font-size:1.5rem;
+}
+
+#robot {
+  font-size:5rem;
+  min-height:100px;
+}
+
+.speech-bubble {
+	position: relative;
+  background: #202020	;
+  border-radius: .4em;
+  padding:10px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 1em solid transparent;
+	border-right-color: #202020;
+	border-left: 0;
+	margin-top: -1em;
+	margin-left: -1em;
+}
+
+.text-center::before{
+  content:"";
+  margin-left:calc(100% - 75%);
+} 

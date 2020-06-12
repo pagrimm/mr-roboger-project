@@ -1,5 +1,7 @@
-function createResponse (inputNumber){
+function createResponse (inputNumber, inputName){
+  const roboResponse = ["Beep!", "Boop!"]
   let outputArray = [];
+  roboResponse.push("Won't you be my neighbor, " + inputName + "?")
   for (i = 0; i <= inputNumber; i++) {
     outputArray.unshift(checkResponse(inputNumber - i));
   }
@@ -7,7 +9,6 @@ function createResponse (inputNumber){
 }
 
 function checkResponse (inputNumber){
-  const roboResponse = ["Beep!", "Boop!", "Won't you be my neighbor?"]
   let inputNumberArray = inputNumber.toString().split("").map(n => parseInt(n));
   let highNumber = 0;
   for (v = 0; v < inputNumberArray.length; v++) {
