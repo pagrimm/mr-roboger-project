@@ -14,19 +14,20 @@ input {
   background-color: black;
   color: #66FF66;
   border: 0px;
+  width: 97%
 }
 
 #robot {
   float:left;
   font-size:5rem;
-  min-height:100px;
 }
 
 .speech-bubble {
   position: relative;
+  float:left;
   background: #202020	;
   border-radius: .4em;
-  padding:10px;
+  padding: 10px;
 }
 
 .speech-bubble:after {
