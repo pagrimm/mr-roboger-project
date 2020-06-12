@@ -19,14 +19,14 @@ input {
 }
 
 button {
-	background: none;
-	color: inherit;
+	background: #66FF66;
+	color: black;
 	border: none;
-	padding: 0;
+	padding: 2px;
 	font: inherit;
 	cursor: pointer;
   outline: inherit;
-  text-decoration: underline;
+  width: 50px;
 }
 
 pre {
@@ -39,14 +39,14 @@ pre {
 }
 
 button:hover {
-  color: #009900;
+  background: #009900;
 }
 
 #output-section {
   display: none;
   margin-top: 20px;
   margin-right: 20px;
-  border: 1px solid #66FF66;
+  border: 5px solid #66FF66;
   padding: 10px;
 }
 
