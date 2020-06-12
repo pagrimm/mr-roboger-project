@@ -47,11 +47,11 @@ function createResponse (inputNumber, inputName){
 }
 
 function checkResponse (inputNumber, inputName){
-  const roboResponse = ["Beep!", "Boop!", "Won't you be my neighbor, " + inputName + "?"]
+  const roboResponse = ["Beep!", "Boop!", "Won't you be my neighbor, " + inputName + "?", "Bzzt!"]
   let inputNumberArray = inputNumber.toString().split("").map(n => parseInt(n));
   let highNumber = 0;
   inputNumberArray.forEach(function (number) {
-    if (number >= 1 && number <= 3 && highNumber < number) {
+    if (number >= 1 && number <= roboResponse.length && highNumber < number) {
       highNumber = number;
     }
   });
