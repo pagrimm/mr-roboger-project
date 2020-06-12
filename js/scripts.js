@@ -5,7 +5,7 @@ $(document).ready(function() {
     event.preventDefault();
     resetResults();
     let inputs = getInputs();
-    if (regex.test(inputs[1]) && parseInt(inputs[1]) < 100 && parseInt(inputs[1]) > 0) {
+    if (validateInput(inputs[1], regex, 0, 100)) {
       showOutput(createResponse(parseInt(inputs[1]), inputs[0]));
     } else {
       showOutput("Beep, boop. Please enter a number between 1 and 99.");
@@ -39,6 +39,16 @@ function clearInputs () {
 function resetResults () {
   $("#output").text("")
   $("#output-section").hide()
+}
+
+function validateInput (input, regex, min, max) {
+  if (regex.test(input) && parseInt(input) < max && parseInt(input) > min) {
+    return true;
+  } else if (isNaN(parseInt(input)) && regex.test(input) && input.length < max && input.length > min) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
