@@ -29,6 +29,15 @@ button {
   text-decoration: underline;
 }
 
+pre {
+  display: block;
+  color: inherit;
+  font-family: 'More Perfect DOS VGA';
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 button:hover {
   color: #009900;
 }
@@ -45,10 +54,6 @@ button:hover {
   font-size: 5rem;
   text-align: right;
 }
-
-#output {
-}
-
 
 @media only screen and (max-width: 768px) {
   #robot {
