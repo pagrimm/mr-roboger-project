@@ -1,14 +1,14 @@
 //USER INTERFACE LOGIC
 $(document).ready(function() {
-  let regex = /^[0-9]*$/
+  let numberRegex = /^[0-9]*$/
   $("#form1").submit(function(event){
     event.preventDefault();
     resetResults();
     let inputs = getInputs();
-    if (validateInput(inputs[1], regex, 0, 100)) {
-      showOutput(createResponse(parseInt(inputs[1]), inputs[0]));
+    if (validateInput(inputs[1], numberRegex, 0, 100)) {
+      showOutput(createResponse(inputs[1], inputs[0]));
     } else {
-      showOutput("Beep, boop. Please enter a number between 1 and 99.");
+      showOutput("Beep, boop. Error. Human, enter an integer between 1 and 99 inclusive.");
     }
   });
   $("#clear-button").click(function(){
@@ -42,9 +42,9 @@ function resetResults () {
 }
 
 function validateInput (input, regex, min, max) {
-  if (regex.test(input) && parseInt(input) < max && parseInt(input) > min) {
+  if (regex.test(input) && parseInt(input) > min && parseInt(input) < max) {
     return true;
-  } else if (isNaN(parseInt(input)) && regex.test(input) && input.length < max && input.length > min) {
+  } else if (isNaN(parseInt(input)) && regex.test(input) && input.length > min && input.length < max) {
     return true;
   } else {
     return false;
