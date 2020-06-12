@@ -1,3 +1,27 @@
+//USER LOGIC
+$(document).ready(function() {
+  $("#form1").submit(function(event){
+    event.preventDefault();
+    let inputs = getInputs();
+    console.log(inputs);
+    $("#output").text(createResponse(parseInt(inputs[1]), inputs[0]))
+    $("#output-section").show()
+  });
+});
+
+function getInputs () {
+  inputsArray = [];
+  $("input").each(function () {
+    inputsArray.push($(this).val());
+  });
+  return inputsArray;
+}
+
+
+
+
+
+//BUSINESS LOGIC
 function createResponse (inputNumber, inputName){
   let outputArray = [];
   for (i = 0; i <= inputNumber; i++) {
