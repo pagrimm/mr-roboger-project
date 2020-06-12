@@ -1,14 +1,13 @@
 function createResponse (inputNumber, inputName){
-  const roboResponse = ["Beep!", "Boop!"]
   let outputArray = [];
-  roboResponse.push("Won't you be my neighbor, " + inputName + "?")
   for (i = 0; i <= inputNumber; i++) {
-    outputArray.unshift(checkResponse(inputNumber - i));
+    outputArray.unshift(checkResponse(inputNumber - i, inputName));
   }
   return outputArray.join(", ");
 }
 
-function checkResponse (inputNumber){
+function checkResponse (inputNumber, inputName){
+  const roboResponse = ["Beep!", "Boop!", "Won't you be my neighbor, " + inputName + "?"]
   let inputNumberArray = inputNumber.toString().split("").map(n => parseInt(n));
   let highNumber = 0;
   inputNumberArray.forEach(function (number) {
