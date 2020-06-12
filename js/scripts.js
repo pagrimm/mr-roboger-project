@@ -2,11 +2,14 @@
 $(document).ready(function() {
   $("#form1").submit(function(event){
     event.preventDefault();
+    resetResults();
     let inputs = getInputs();
-    console.log(inputs);
-    $("#output").text(createResponse(parseInt(inputs[1]), inputs[0]))
-    $("#output-section").show()
+    showResults(inputs)
   });
+  $("#clear-button").click(function(){
+    clearInputs();
+    resetResults();
+  })
 });
 
 function getInputs () {
@@ -17,8 +20,21 @@ function getInputs () {
   return inputsArray;
 }
 
+function showResults (inputs) {
+  $("#output").text(createResponse(parseInt(inputs[1]), inputs[0]))
+  $("#output-section").show()
+} 
 
+function clearInputs () {
+  $("input").each(function () {
+    $(this).val("");
+  });
+}
 
+function resetResults () {
+  $("#output").text("")
+  $("#output-section").hide()
+}
 
 
 //BUSINESS LOGIC
