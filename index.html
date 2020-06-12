@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.css" rel="stylesheet" type = "text/css">
-  <link href="css/styles.css" rel="stylesheet" type = "text/css">
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  <script src="js/jquery-3.5.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Document</title>
-</head>
-<body>
-  <section id="input-section">
-    <pre>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type = "text/css">
+    <link href="css/styles.css" rel="stylesheet" type = "text/css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Mr. Roboger's Neighborhood</title>
+  </head>
+  <body>
+    <section id="input-section">
+      <pre>
 ╔════════════════════════════╗
 ║ MR. ROBOGER'S NEIGHBORHOOD ║
 ╚════════════════════════════╝
-    </pre>
-    <form id="form1">
-      <p id="prompt">PLEASE INPUT YOUR NAME:</p>
-      <p><span>> </span><input id="input-name" type="text" autocomplete="off"></p>
-      <p>PLEASE INPUT AN INTEGER:</p>
-      <p><span>> </span><input id="input-number" type="text" autocomplete="off"></p>
-    </form>
-  </section>
-  <section id="button-section">
-    <button id="submit-button" type="submit" form="form1">SUBMIT</button>
-    <button id="clear-button" type="button">CLEAR</button>
-  </section>
-  <section id="output-section">
-    <div class="row">
-      <div class="col-md-2 my-auto">
-        <div id="robot">&#129302;</div>
+      </pre>
+      <form id="form1">
+        <p id="prompt">INPUT YOUR NAME:</p>
+        <p><span>> </span><input id="input" type="text" autocomplete="off"></p>
+        <p>INPUT AN INTEGER:</p>
+        <p><span>> </span><input id="input-number" type="text" autocomplete="off"></p>
+      </form>
+    </section>
+    <section id="button-section">
+      <button id="submit-button" type="submit" form="form1">SUBMIT</button>
+      <button id="clear-button" type="button">CLEAR</button>
+    </section>
+    <section id="output-section">
+      <div class="row">
+        <div class="col-md-2 my-auto">
+          <div id="robot">&#129302;</div>
+        </div>
+        <div class="col-md-10 my-auto">
+          <p class="align-middle" id="output">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus officia voluptate blanditiis porro laboriosam atque molestias nisi mollitia sint, maxime minima quam necessitatibus architecto eligendi impedit corporis et in est!</p>
+        </div>
       </div>
-      <div class="col-md-10 my-auto">
-        <p class="align-middle" id="output">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus officia voluptate blanditiis porro laboriosam atque molestias nisi mollitia sint, maxime minima quam necessitatibus architecto eligendi impedit corporis et in est!</p>
-      </div>
-    </div>
-  </section>
-</body>
+    </section>
+  </body>
 </html>
