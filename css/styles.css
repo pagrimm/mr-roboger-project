@@ -2,9 +2,11 @@ h1 {
   font-size:1.5rem;
 }
 
+
 #robot {
   font-size:5rem;
   min-height:100px;
+  text-align: right;
 }
 
 .speech-bubble {
@@ -31,4 +33,23 @@ h1 {
 .text-center::before{
   content:"";
   margin-left:calc(100% - 75%);
-} 
+}
+
+@media only screen and (max-width: 768px) {
+  #robot {
+    text-align: center;
+  }
+  .speech-bubble:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 1em solid transparent;
+    border-bottom-color: #00aabb;
+    border-top: 0;
+    margin-left: -1em;
+    margin-top: -1em;
+  }
+}
