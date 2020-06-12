@@ -18,31 +18,14 @@ input {
 }
 
 #robot {
-  float:left;
-  font-size:5rem;
+  float: left;
+  font-size: 5rem;
 }
 
-.speech-bubble {
-  position: relative;
-  float:left;
-  background: #202020	;
-  border-radius: .4em;
-  padding: 10px;
+#output {
+  vertical-align: middle;
 }
 
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 1em solid transparent;
-	border-right-color: #202020;
-	border-left: 0;
-	margin-top: -1em;
-	margin-left: -1em;
-}
 
 @media only screen and (max-width: 768px) {
   #robot {

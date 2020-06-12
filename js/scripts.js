@@ -11,13 +11,13 @@ function createResponse (inputNumber, inputName){
 function checkResponse (inputNumber){
   let inputNumberArray = inputNumber.toString().split("").map(n => parseInt(n));
   let highNumber = 0;
-  for (v = 0; v < inputNumberArray.length; v++) {
-    if (inputNumberArray[v] >= 1 && inputNumberArray[v] <= 3) {
-      if (highNumber < inputNumberArray[v]) {
-        highNumber = inputNumberArray[v];
+  inputNumberArray.forEach(function (number) {
+    if (number >= 1 && number <= 3) {
+      if (highNumber < number) {
+        highNumber = number;
       }
     }
-  }
+  });
   if (highNumber > 0) {
     return roboResponse[highNumber - 1];
   } else {
