@@ -1,10 +1,15 @@
 //USER INTERFACE LOGIC
 $(document).ready(function() {
+  let regex = /^[0-9]*$/
   $("#form1").submit(function(event){
     event.preventDefault();
     resetResults();
     let inputs = getInputs();
-    showResults(inputs)
+    if (regex.test(inputs[1]) && parseInt(inputs[1]) < 100 && parseInt(inputs[1]) > 0) {
+      showOutput(createResponse(parseInt(inputs[1]), inputs[0]));
+    } else {
+      showOutput("Beep, boop. Please enter a number between 1 and 99.");
+    }
   });
   $("#clear-button").click(function(){
     clearInputs();
@@ -20,8 +25,8 @@ function getInputs () {
   return inputsArray;
 }
 
-function showResults (inputs) {
-  $("#output").text(createResponse(parseInt(inputs[1]), inputs[0]))
+function showOutput (input) {
+  $("#output").text(input);
   $("#output-section").show()
 } 
 
