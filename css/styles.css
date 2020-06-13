@@ -26,7 +26,12 @@ button {
 	font: inherit;
 	cursor: pointer;
   outline: inherit;
-  width: 60px;
+  width: 80px;
+}
+
+.inactive-button {
+	background: black;
+	color: #66FF66;
 }
 
 pre {
