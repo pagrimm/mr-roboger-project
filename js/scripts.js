@@ -8,7 +8,7 @@ $(document).ready(function() {
     if (validateInput(inputs[1], numberRegex, 0, 100)) {
       showOutput(createResponse(inputs[1], inputs[0]));
     } else {
-      showOutput("Beep, boop. Error. Human, enter an integer between 1 and 99 inclusive.");
+      showOutput("BEEP. BOOP. ERROR. HUMAN, PLEASE ENTER AN INTEGER BETWEEN 1 AND 99 INCLUSIVE.");
     }
   });
   $("#clear-button").click(function(){
@@ -62,7 +62,7 @@ function createResponse (inputNumber, inputName){
 }
 
 function checkResponse (inputNumber, inputName){
-  const roboResponse = ["Beep!", "Boop!", "Won't you be my neighbor, " + inputName + "?", "Bzzt!"]
+  const roboResponse = ["BEEP!", "BOOP!", "WON'T YOU BE MY NEIGHBOR, " + inputName.toUpperCase() + "?", "BZZT!"]
   let inputNumberArray = inputNumber.toString().split("").map(n => parseInt(n));
   let highNumber = 0;
   inputNumberArray.forEach(function (number) {
