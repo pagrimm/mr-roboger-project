@@ -29,7 +29,6 @@ Week 3 project for Epicodus. A page that will return a list of numbers from 0 to
 
 HTML  
 CSS  
-Bootstrap 4.5.0  
 jQuery 3.5.1
 
 ## Legal
