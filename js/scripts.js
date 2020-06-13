@@ -6,10 +6,10 @@ $(document).ready(function() {
     event.preventDefault();
     resetResults();
     let inputs = getInputs();
-    if (validateInput(inputs[1], numberRegex, 0, 100)) {
+    if (validateInput(inputs[1], numberRegex, 0, 100) && inputs[0].length > 0) {
       showOutput(createResponse(inputs[1], inputs[0], toggle));
     } else {
-      showOutput("BEEP. BOOP. ERROR. HUMAN, PLEASE ENTER AN INTEGER BETWEEN 1 AND 99 INCLUSIVE.");
+      showOutput("BEEP. BOOP. ERROR. HUMAN, PLEASE ENTER A NAME AND INTEGER BETWEEN 1 AND 99 INCLUSIVE.");
     }
   });
   $("#toggle-button").click(function(){

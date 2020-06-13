@@ -1,5 +1,5 @@
 h1 {
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 body {
@@ -26,7 +26,7 @@ button {
 	font: inherit;
 	cursor: pointer;
   outline: inherit;
-  width: 80px;
+  width: 100px;
 }
 
 .inactive-button {
@@ -53,17 +53,37 @@ button:hover {
   margin-right: 20px;
   border: 5px solid #66FF66;
   padding: 10px;
+  min-width: 300px;
 }
 
 #output {
   margin-bottom: 0px;
 }
 
+p.output-block{
+  display: table;
+  width: 100%;
+  min-width: 300px;
+}
+
+span#output {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+
 #robot {
+  display: table-cell;
   font-size: 5rem;
   text-align: center;
   line-height: 0;
   margin-bottom: 5px;
+  width: 1px;
+  vertical-align: middle;
+}
+
+i {
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 768px) {
