@@ -87,10 +87,6 @@ i {
 }
 
 @media only screen and (max-width: 768px) {
-  #robot {
-    text-align: center;
-    margin-bottom: 10px;
-  }
   input {
     width:90%;
   }
