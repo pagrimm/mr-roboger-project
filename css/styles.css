@@ -15,7 +15,9 @@ input {
   background-color: black;
   color: #66FF66;
   border: 0px;
-  width: 97%
+  width: 97%;
+  font-family: 'More Perfect DOS VGA';
+  font-size: 1em;
 }
 
 button {
