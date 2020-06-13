@@ -4,7 +4,7 @@ By Peter Grimm, 05.29.2020
 
 ## Description
 
-Week 3 project for Epicodus. A page that will return a list of numbers from 0 to the inputted number, and replace numbers containing a one, two, or three with snippets of text. Designed to showcase my skills in looping Javascript logic, behavior driven development, and the separation of business and user interface logic.
+Week 3 project for Epicodus. A page that will return a list of numbers from 0 to the inputted number, and replace numbers containing a one, two, or three with snippets of text. Designed to showcase my skills in looping Javascript logic, behavior driven development, and the separation of business and user interface logic. Another version of this project that also incorporates the conversion logic from the pig latin and Roman numeral exercises earlier this week can be found here: https://github.com/pagrimm/roboger-prime
 
 ## Specifications
 | Behavior                                                                           | Input  | Output                                   |
