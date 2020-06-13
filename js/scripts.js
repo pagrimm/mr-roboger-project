@@ -71,7 +71,7 @@ function validateInput (input, regex, min, max) {
 //function to create Mr. Roboger's output, takes an input number and input name, feeds them into the checkResponse function, and then either shift or unshifts the results depending on the user's forward or backwards toggle
 function createResponse (inputNumber, inputName, toggle){
   let outputArray = [];
-  for (i = 0; i <= inputNumber; i++) {
+  for (let i = 0; i <= inputNumber; i++) {
     if (toggle === "forwards") {
       outputArray.unshift(checkResponse(inputNumber - i, inputName));
     } else {
