@@ -26,7 +26,7 @@ button {
 	font: inherit;
 	cursor: pointer;
   outline: inherit;
-  width: 50px;
+  width: 60px;
 }
 
 pre {
@@ -56,7 +56,7 @@ button:hover {
 
 #robot {
   font-size: 5rem;
-  text-align: right;
+  text-align: center;
   line-height: 0;
   margin-bottom: 5px;
 }
@@ -64,19 +64,16 @@ button:hover {
 @media only screen and (max-width: 768px) {
   #robot {
     text-align: center;
+    margin-bottom: 10px;
   }
-  .speech-bubble:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: 1em solid transparent;
-    border-bottom-color: #202020;
-    border-top: 0;
-    margin-left: -1em;
-    margin-top: -1em;
+  input {
+    width:90%;
+  }
+}
+
+@media only screen and (max-width: 544px) {
+  input {
+    width:80%;
   }
 }
 
